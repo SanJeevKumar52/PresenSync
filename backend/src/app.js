@@ -6,6 +6,8 @@ import morgan from 'morgan';
 import rateLimit from "express-rate-limit";
 
 import errorHandler from "./middlewares/error.middleware.js";
+import authRoutes from "./routes/auth.routes.js";
+
 
 const app = express();
 
@@ -31,6 +33,7 @@ app.get("/api/health", (req, res) => {
         message: "API is running ",
     });
 });
+app.use("api/auth",authRoutes);
 
 // Error middleware
 app.use(errorHandler);
