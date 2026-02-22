@@ -11,6 +11,14 @@ Built with production-level structure, validation, and security practices.
 
 ---
 
+## Links
+
+- **GitHub Repository**: [https://github.com/SanJeevKumar52/PresenSync](https://github.com/SanJeevKumar52/PresenSync)
+- **Live Frontend**: [https://presensync-1.onrender.com](https://presensync-1.onrender.com)
+- **Backend API**: [https://presensync-kjbr.onrender.com/api/health](https://presensync-kjbr.onrender.com/api/health)
+
+---
+
 ## Tech Stack
 
 ### Backend
@@ -85,12 +93,12 @@ attendanceSchema.index({ user: 1, date: 1 }, { unique: true });
 ```
 
 This ensures:
-- No duplicate attendance per day
-- Database-level enforcement
+-  No duplicate attendance per day
+-  Database-level enforcement
 
 ---
 
-## 📋 Task Management
+##  Task Management
 
 ### Create Task
 `POST /api/tasks`
@@ -109,7 +117,7 @@ This ensures:
 
 ---
 
-## 🛡️ Security Measures
+## Security Measures
 
 - Password hashing (bcrypt, salt rounds 12)
 - JWT token authentication
@@ -123,7 +131,7 @@ This ensures:
 
 ---
 
-## 🗄️ Database Schema Design
+## Database Schema Design
 
 ### Users
 
@@ -159,7 +167,7 @@ This ensures:
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### Clone Repository
 
@@ -182,6 +190,7 @@ PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 NODE_ENV=development
+CLIENT_URL=client url
 ```
 
 Run backend:
@@ -190,7 +199,7 @@ Run backend:
 npm run dev
 ```
 
-### 3️⃣ Frontend Setup
+### Frontend Setup
 
 ```bash
 cd frontend
@@ -224,13 +233,19 @@ http://localhost:5173
 
 ## Deployment
 
+### Live Application
+
+- **Frontend**: [https://presensync-1.onrender.com](https://presensync-1.onrender.com)
+- **Backend API**: [https://presensync-kjbr.onrender.com/api/health](https://presensync-kjbr.onrender.com/api/health)
+
 ### Backend can be deployed on:
-- Render
+- Render  (Currently Deployed)
 - AWS EC2
 - Railway
 - GCP
 
 ### Frontend can be deployed on:
+- Render (Currently Deployed)
 - Vercel
 - Netlify
 
@@ -249,16 +264,15 @@ http://localhost:5173
 
 ---
 
-## 📎 Author
+## Author
 
 **Sanjeev Kumar**  
 Full Stack Developer (MERN)
 
 ---
 
-## 📄 License
+## License
 
 This project is created for technical evaluation purposes.
 
 ---
-
