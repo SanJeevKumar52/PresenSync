@@ -7,6 +7,7 @@ import rateLimit from "express-rate-limit";
 
 import errorHandler from "./middlewares/error.middleware.js";
 import authRoutes from "./routes/auth.routes.js";
+import attendanceRoutes from "./routes/attendance.routes.js";
 
 
 const app = express();
@@ -34,6 +35,7 @@ app.get("/api/health", (req, res) => {
     });
 });
 app.use("/api/auth",authRoutes);
+app.use("/api/attendance", attendanceRoutes);
 
 // Error middleware
 app.use(errorHandler);
