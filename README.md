@@ -1,4 +1,4 @@
-# Mini Attendance + Task Management System
+# PresenSync (Mini Attendance + Task Management System)
 
 A full-stack web application that allows users to:
 
@@ -172,8 +172,8 @@ This ensures:
 ### Clone Repository
 
 ```bash
-git clone <your-repo-url>
-cd mini-attendance-system
+git clone https://github.com/SanJeevKumar52/PresenSync.git
+cd PresenSync
 ```
 
 ### Backend Setup
@@ -190,7 +190,7 @@ PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 NODE_ENV=development
-CLIENT_URL=client url
+CLIENT_URL=frontend url
 ```
 
 Run backend:
@@ -214,7 +214,7 @@ http://localhost:5173
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Auth
 - `POST /api/auth/signup`
