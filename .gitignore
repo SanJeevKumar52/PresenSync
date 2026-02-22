@@ -1,20 +1,21 @@
-# node modules
+# Node modules
 node_modules/
 frontend/node_modules/
 backend/node_modules/
 
-# env files
+# Environment variables
 .env
-client/.env
-server/.env
+frontend/.env
+backend/.env
 
-# build folders
-client/build/
-client/.next/
-dist/
+# Build output
+frontend/dist/
+frontend/build/
+frontend/.next/
+backend/dist/
 
-# logs
-logs
+# Logs
+logs/
 *.log
 npm-debug.log*
 
